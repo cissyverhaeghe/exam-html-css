@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  height: 111px;
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 1732px;
+  min-height: 10px;
+  width: 90%;
+}
+
+header .container {
+  align-items: center;
+  color: #121212;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+
+header .container h1 {
+  font-size: 16px;
+  padding-left: 39px;
+  /* text-transform: uppercase; */
+}
+
+/* header .container h1::first-letter{
+    text-transform: lowercase;
+} */
+
+header .container nav ul::after {
+  content: "\e901";
+  cursor: pointer;
+  display: flex;
+  font-family: icons;
+  height: 15px;
+  height: 15px;
+}
+
+header .container nav ul {
+  display: flex;
+  font-size: 12px;
+  gap: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+header .container nav ul li a {
+  color: #121212;
+  text-decoration: none;
+}
+
+header .container nav ul li a:hover {
+  color: #e7e34f;
+}
+
+.banner {
+  background-image: url("../images/backgroundindex.jpeg");
+  height: 400px;
+  max-width: 1784px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  color: #e7e34f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  padding-top: 96px;
+  padding-left: 132px;
+}
+
+.about .container {
+  border-bottom: 1px solid #121212;
+}
+
+.about .container .articles {
+  display: flex;
+  gap: 73px;
+  padding: 97px 48px 34px 48px;
+}
+
+.about .container .articles section {
+  width: 66.6%;
+}
+
+.about .container .articles aside {
+  width: 33.3%;
+}
+
+.about .container .articles h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+.about .container .articles p {
+  color: #646464;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 20px;
+  margin-top: 14px;
+}
+.about .container .articles p:last-child {
+  margin-top: 14px;
+}
+
+.about a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #959364;
+}
+
+.about aside a {
+  display: block;
+  margin-top: 17px;
+}
+
+.portfolio .container {
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.portfolio .container .images {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 12px;
+  padding: 48px;
+  padding-bottom: 62px;
+}
+
+.portfolio .container .images .imageholder {
+  aspect-ratio: 16/9;
+  flex: 1 1 480px;
+  position: relative;
+}
+
+.portfolio .container .images .imageholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.portfolio .container .images .imageholder span {
+  position: absolute;
+  left: 24px;
+  bottom: 13px;
+}
+
+.portfolio .container .images span p {
+  color: #f4f4f4;
+  margin-top: 9px;
+}
+
+.portfolio .container .images span p:first-child {
+  color: #e7e34f;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.portfolio .container .images span p:nth-child(2) {
+  font-size: 15px;
+}
+
+.portfolio .container .images span p:nth-child(3) {
+  font-size: 12px;
+}
+
+::placeholder {
+  color: 8f8f8f;
+  opacity: 1;
+}
+
+.contact .container .articles {
+  display: flex;
+  gap: 185px;
+  padding: 48px;
+}
+
+.contact .container .formulier {
+  width: 62%;
+}
+
+.contact .container .contactgegevens {
+  width: 38%;
+}
+
+.contact h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact .container .formulier form input,
+.contact .container .formulier form textarea {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #b1b1b1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+  padding-top: 24px;
+}
+
+.contact .container .formulier form textarea {
+  padding-bottom: 71px;
+}
+
+button {
+  margin-top: 8px;
+  padding: 10px 31px 10px 31px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #9a9a9a;
+  background-color: transparent;
+}
+
+.contact .container .contactgegevens h2 {
+  margin-bottom: 38px;
+}
+
+.contactgegevens p {
+  color: #646464;
+  font-size: 14px;
+}
+
+.contactgegevens p:first-of-type {
+  margin-bottom: 28px;
+}
+
+.contactgegevens a {
+  color: #959364;
+  text-decoration: none;
+}
+
+.links {
+  display: block;
+  margin-top: 80px;
+}
+
+.links a {
+  padding-right: 20px;
+}
+
+.links a:after {
+  font-family: icons;
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: #e7e34f;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.links a:first-of-type:after {
+  content: "\ea9d";
+}
+
+.links a:nth-of-type(2):after {
+  content: "\ea92";
+}
+
+.links a:nth-of-type(3):after {
+  content: "\ea90";
+}
+
+.links a:nth-of-type(4):after {
+  content: "\ea96";
+}
+
+footer {
+  background-color: #3f3f3f;
+  height: 50px;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b7b6b6;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about .container .articles {
+    display: block;
+    /* gap: 73px; */
+    padding: 97px 48px 34px 48px;
+  }
+  .about .container .articles section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about .container .articles aside {
+    width: 100%;
+  }
+  .links {
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .links a:after {
+    flex: 1 1 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact .container .articles {
+    display: block;
+  }
+  .contact .container .formulier {
+    width: 100%;
+  }
+
+  .contact .container .contactgegevens {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .banner h1 {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+}
